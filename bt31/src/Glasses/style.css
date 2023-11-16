@@ -1,0 +1,64 @@
+.bg-container {
+  background: url("../../public/glassesImage/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.model-wrapper {
+  position: relative;
+  height: 250px;
+  width: 220px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+}
+
+.model-img {
+  height: 250px;
+  width: 220px;
+  position: absolute;
+  left: 0;
+}
+
+.model-glass {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  top: 25%;
+  transform: translateX(-50%);
+}
+
+.glass-info {
+  position: absolute;
+  background-color: hsla(0, 100%, 90%, 0.3);
+  font-size: 12px;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
+.list-glasses {
+  display: flex;
+  height: 40vh;
+  align-items: flex-end;
+}
+
+.list-glasses * {
+  margin: 10px;
+  width: 100vw;
+}
+
+.glass {
+  width: 110px;
+  height: 70px;
+  background-color: white;
+  padding: 10px;
+}
+
