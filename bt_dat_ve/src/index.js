@@ -3,16 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createStore } from 'redux';
-import { seatReducer } from './DatVe/redux/reducer';
 import { Provider } from 'react-redux';
+import { configureStore } from '@reduxjs/toolkit';
+import datVeSlice from './DatVe/datVeSlice';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-let store = createStore(
-  seatReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-)
+let store = configureStore({
+  reducer: {
+    datVeSlice: datVeSlice
+  }
+})
 
 root.render(
   <Provider store={store}>
